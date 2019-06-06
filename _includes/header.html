@@ -12,6 +12,10 @@
           <li class="nav-item">
             <a class="nav-link" href="#publications">Publications</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#photos">Photos</a>
+          </li>
+
         {%- for path in page_paths -%}
           {%- assign my_page = site.pages | where: "path", path | first -%}
           {%- if my_page.title -%}

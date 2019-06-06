@@ -3,6 +3,25 @@ layout: page
 title: Daniele Ferone
 ---
 
+   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".fancybox").fancybox({
+        openEffect: "none",
+        closeEffect: "none"
+    });
+    
+    $(".zoom").hover(function(){
+		
+		$(this).addClass('transition');
+	}, function(){
+        
+		$(this).removeClass('transition');
+	});
+});
+</script>
+
 <p><strong>Daniele Ferone</strong> obtained his Ph.D. in Mathematics and Computer Science at the <a href="https://www.unina.it">University of Napoli “Federico II”</a> with a thesis on “The Shortest Path Tour Problem and its variants”. He spent a year as PostDoc Researcher at the Universitat Oberta de Catalunya, Barcelona, Spain, and he is currently working at <a href="https://www.unimib.it">University of Milano Bicocca</a> in the <a href="http://www.mind.disco.unimib.it/">MIND</a> group on the project “Tourist tour planning models”. His main research interests are meta-heuristics, shortest path problems, and logistic optimization.</p>
 
 
@@ -48,3 +67,16 @@ title: Daniele Ferone
 <li><strong>Ferone, D.</strong>, P. Festa and T. Pastore (2019). ‘The <em>k</em>-Color Shortest Path Problem’. In: (eds) ODS2019 - Optimization and Decision Science. AIRO Springer.</li>
 <li><strong>Ferone, D.</strong>, S. Hatami, E. M. González-Neira, A. A. Juan and P. Festa (2019). ‘A Biased-Randomized Iterated Local Search for the Distributed Assembly Permutation Flow-Shop Problem’. <em>International Transactions in Operational Research</em>. (2017 IF 2.40 Q1). Submitted.</li>
 </ul>
+
+
+<a name="photos" class="anchor"><h2>Photos</h2></a>
+<div class="row">
+  	<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+   		<figure>
+   			<a href="photos/2018-09-12-09-10-28_AIRO2018.jpg" class="fancybox" rel="ligthbox">
+   				<img  src="photos/2018-09-12-09-10-28_AIRO2018.jpg" class="zoom img-fluid"  alt="Taormina">
+            </a>
+            <figcaption>Taormina</figcaption>
+        </figure>
+    </div>
+</div>
