@@ -8,9 +8,15 @@ title: About me
 <script type="text/javascript">
 $(document).ready(function(){
   $(".fancybox").fancybox({
-        openEffect: "none",
-        closeEffect: "none"
-    });
+    helpers :{
+        "openEffect": "fade",
+        "closeEffect": "none",
+        title : { type : 'over' }
+    },
+  beforeLoad: function() {
+    this.title = $(this.element).attr('caption');
+   }
+});
     
     $(".zoom").hover(function(){
 		
@@ -37,31 +43,38 @@ $(document).ready(function(){
 </div>-->
 
 
-
-<a name="photos" class="anchor"><h2>Photos</h2></a>
-<div class="row">
-  <div class="col-md-4 col-xs-6 thumb">
-    <figure>
-      <a href="photos/2014-09-14-Selinunte.jpg" class="fancybox" rel="ligthbox">
+<h2 class="mt-3">Photos</h2>
+<section class="gallery-block cards-gallery">
+  <div class="row">
+  <div class="col-md-4 col-12 thumb">
+    <div class="card border-0 transform-on-hover thumb">
+      <a href="photos/2014-09-14-Selinunte.jpg" class="fancybox" rel="ligthbox" caption="2014, Selinunte, Graph Theory, Algorithms and Applications 3rd Edition">
         <img  src="photos/2014-09-14-Selinunte.jpg" class="zoom img-fluid"  alt="Selinunte">
-      </a>        
-        <figcaption>2014-09-14, Selinunte, <a href="http://www.graphalgorithms.it/erice2014/index.php">Graph Theory, Algorithms and Applications 3rd Edition</a></figcaption>
-    </figure>
+      </a>
+      <div class="card-body">
+        <p class="text-muted card-text">2014, Selinunte<br/><a href="http://www.graphalgorithms.it/erice2014/index.php">Graph Theory, Algorithms and Applications 3rd Edition</a></p>
+      </div>
+    </div>
   </div>
-  <div class="col-md-4 col-xs-6 thumb">
-  	<figure>
-  		<a href="photos/2018-09-12-09-10-28_AIRO2018.jpg" class="fancybox" rel="ligthbox">
+  <div class="col-md-4 col-12 thumb">
+  	<div class="card border-0 transform-on-hover thumb">
+  		<a href="photos/2018-09-12-09-10-28_AIRO2018.jpg" class="fancybox" rel="ligthbox" caption="2018, Taormina, ODS2018">
   			<img  src="photos/2018-09-12-09-10-28_AIRO2018.jpg" class="zoom img-fluid"  alt="Taormina">
-      </a>        
-        <figcaption>2018-09-12, Taormina, <a href="https://www.airoconference.it/ods2018/">ODS2018</a></figcaption>
-    </figure>
+      </a>
+      <div class="card-body">
+        <p class="text-muted card-text">2018, Taormina<br/><a href="https://www.airoconference.it/ods2018/">ODS2018</a></p>
+      </div>
+    </div>
   </div>
-  <div class="col-md-4 col-xs-6 thumb">
-    <figure>
-      <a href="photos/20190328 bucatini.jpg" class="fancybox" rel="ligthbox">
+  <div class="col-md-4 col-12 thumb">
+    <div class="card border-0 transform-on-hover thumb">
+      <a href="photos/20190328 bucatini.jpg" class="fancybox" rel="ligthbox" caption="2019, Roma, 3AYW">
         <img  src="photos/20190328 bucatini.jpg" class="zoom img-fluid"  alt="Taormina">
-      </a>        
-        <figcaption>2019-03-28, Roma, <a href="https://workshop.airoyoung.org/">3AYW</a></figcaption>
-    </figure>
+      </a>
+      <div class="card-body">
+        <p class="text-muted card-text">2019, Roma<br/><a href="https://workshop.airoyoung.org/">3AYW</a></p>
+      </div>
+    </div>
   </div>
 </div>
+</section>
