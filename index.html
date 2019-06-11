@@ -9,24 +9,25 @@ title: About me
 $(document).ready(function(){
   $(".fancybox").fancybox({
     helpers :{
-        "openEffect": "fade",
-        "closeEffect": "none",
-        title : { type : 'over' }
+      "openEffect": "fade",
+      "closeEffect": "none",
+      title : { type : 'over' }
     },
-  beforeLoad: function() {
-    this.title = $(this.element).attr('caption');
-   }
-});
-    
-    $(".zoom").hover(function(){
-		
-		$(this).addClass('transition');
-	}, function(){
-        
-		$(this).removeClass('transition');
+    beforeLoad: function() {
+      this.title = $(this.element).attr('caption');
+    }
+  });
+
+  $(".zoom").hover(function() {
+      $(this).addClass('transition');
+    }, function() {
+      $(this).removeClass('transition');
 	});
+
 });
 </script>
+  <!--var images = ['2014-09-14-Selinunte.jpg', '2018-09-12-09-10-28_AIRO2018.jpg'];
+  $('.jumbotron').css({'background-image': 'url(photos/' + images[Math.floor(Math.random() * images.length)] + ')'});-->
 
 <div class="row">
   <div class="col-12">
