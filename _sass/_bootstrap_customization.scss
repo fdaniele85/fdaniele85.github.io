@@ -332,3 +332,19 @@ legend {
   }
 }
 
+$display5-size:               3rem !default;
+$display6-size:               2.5rem !default;
+$display5-weight:             300 !default;
+$display6-weight:             300 !default;
+
+.display-5 {
+  @include font-size($display5-size);
+  font-weight: $display5-weight;
+  line-height: $display-line-height;
+}
+
+.display-6 {
+  @include font-size($display6-size);
+  font-weight: $display6-weight;
+  line-height: $display-line-height;
+}
